@@ -14,7 +14,7 @@ Note: Presently Application supports plain text files and print the number of wo
 * Junit Jupiter
 * Mockito
 
-## How to Build The Project
+## How to Build the Project
 * Using either Java IDEs (e.g. Intellij) build tools to compile and build project or
 * Use below command build jar file
 
