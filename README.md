@@ -14,8 +14,8 @@ Note: Presently Application supports plain text files and print the number of wo
 * Junit Jupiter
 * Mockito
 
-## How to Build Project
-* Using either Java IDEs (e.g. Intellij) build button to compile and build project or
+## How to Build The Project
+* Using either Java IDEs (e.g. Intellij) build tools to compile and build project or
 * Use below command build jar file
 
 ```bash
@@ -30,7 +30,7 @@ mvn clean install
     * "/src/main"
     * "/src/main/java" and so on.
 
-- [x] For the purpose of this task I choose to create a folder in the java package, so that I can keep things clean, 
+- [x] For the purpose of this task I choose to create a fileStorage directory in the java folder, so that I can keep things clean, 
   thus I will be using /src/main/java/fileStorage for the directory
   
 ```bash
@@ -60,7 +60,7 @@ When we run jar file. it invokes Starter class main method it takes directory pa
   * Moving the file to the processedDir folder
   * displaying the file stats to the console and  
   * saving the statistics of the file in the output.txt file under stat folder located in the directory
-  * The files may not visibly show immediately on intellij, so you can either wait 4 - 5 seconds or run the tree command, to be sure that it has been created
+  * The folder and the file may not show up immediately on intellij, you can either wait 4 - 5 seconds or run the tree command, to be sure that it has been created
    ```
      tree src/main/java/fileStorage
     ```
