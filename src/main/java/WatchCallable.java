@@ -8,7 +8,6 @@ public record WatchCallable(Path path) implements Callable<Void> {
         DirectoryObserver dirObserver = DirectoryObserver.getDirectoryObserverInstance();
         dirObserver.initializeWatcher(path);
         dirObserver.createProcessedDir(path);
-
         dirObserver.startFileWatch(path);
         return null;
     }
