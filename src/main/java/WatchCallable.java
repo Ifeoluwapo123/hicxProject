@@ -9,14 +9,6 @@ public record WatchCallable(Path path) implements Callable<Void> {
         dirObserver.initializeWatcher(path);
         dirObserver.createProcessedDir(path);
 
-        // ensure processed directory is created first before watching for files
-        try {
-            Thread.sleep(15000);
-            System.out.println("Done");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         dirObserver.startFileWatch(path);
         return null;
     }
